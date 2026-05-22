@@ -1,0 +1,229 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+    display: flex;
+    height: 100vh;
+    background: linear-gradient(135deg, rgba(40, 40, 45, 0.95) 0%, rgba(30, 30, 35, 0.98) 100%);
+}
+
+.menu {
+    width: 220px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+}
+
+.menu-titulo {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: white;
+    padding: 18px;
+    margin-bottom: 10px;
+    text-align: center;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.1);
+}
+
+.menu-titulo h2 {
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.boton-menu {
+    padding: 16px 20px;
+    margin-bottom: 0;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 18px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    color: white;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.1);
+}
+
+.boton-menu:hover {
+    background: rgba(46, 46, 46, 0.2);
+    box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.15);
+}
+
+.boton-menu.activo {
+    background: rgba(255, 255, 255, 0.25);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 8px 24px 0 rgba(0, 0, 0, 0.2);
+}
+
+.boton-perifericos {
+    padding: 12px 15px;
+    margin-bottom: 0;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 18px;
+    font-size: 10px;
+    font-weight: 500;
+    cursor: pointer;
+    color: white;
+}
+
+.boton-cerrar {
+    padding: 16px 20px;
+    margin-top: auto;
+    background: rgba(255, 59, 48, 0.15);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 59, 48, 0.3);
+    color: white;
+    border-radius: 18px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.1);
+}
+
+.boton-cerrar:hover {
+    background: rgba(255, 59, 48, 0.25);
+    box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.15);
+}
+
+.contenido {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin: 20px 20px 20px 0;
+    overflow: hidden;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
+}
+
+.cabecera {
+    background-color: #FF9500;
+    color: white;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cabecera h1 {
+    font-size: 28px;
+}
+
+.boton-soporte {
+    padding: 12px 20px;
+    background-color: white;
+    color: #FF9500;
+    border: none;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.boton-soporte:hover {
+    background-color: #f5f5f5;
+}
+
+.area-trabajo {
+    flex: 1;
+    padding: 40px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+}
+
+.area-trabajo p {
+    color: #999;
+    font-size: 18px;
+}
+
+.logo-area {
+    width: 300px;
+    height: auto;
+    opacity: 0.5;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+/* Enlaces con clase boton-menu: estilo igual que botones, sin subrayado y centrado */
+a.boton-menu,
+a.boton-menu:link,
+a.boton-menu:visited {
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    color: white;
+}
+
+a.boton-menu:hover,
+ a.boton-menu:focus,
+ a.boton-menu:active {
+     text-decoration: none;
+ }
+
+/* ===== Tabla PORTATIL en el área de trabajo ===== */
+.tabla-contenedor {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tabla-portatil {
+    width: min(820px, 92%);
+    border-collapse: collapse;
+    border-radius: 14px;
+    overflow: hidden; /* redondeado visible */
+    box-shadow: 0 10px 30px rgba(0,0,0,0.10);
+    text-align: center;
+}
+
+.tabla-portatil thead th {
+    background: #FF7A00; /* franja naranja */
+    color: #1f1f1f;
+    font-size: 24px;
+    letter-spacing: 1px;
+    padding: 18px 14px;
+}
+
+.tabla-portatil tbody td {
+    padding: 18px 16px;
+    font-size: 16px;
+    color: #2c2c2c;
+    border: 1px solid rgba(0,0,0,0.05);
+    background: #ffcfaa; /* tono melocotón claro */
+}
+
+/* Filas alternas ligeramente más oscuras para profundidad */
+.tabla-portatil tbody tr:nth-child(even) td {
+    background: #ffc89b;
+}
+
+/* Columna izquierda: etiquetas alineadas a la izquierda */
+.tabla-portatil td.campo {
+    text-align: left;
+    font-weight: 600;
+    width: 35%;
+}
+
+/* Celdas de datos preparadas para BD */
+#dato-nombre,
+#dato-marca,
+#dato-fecha,
+#dato-estado {
+    text-align: center;
+    font-weight: 600;
+}

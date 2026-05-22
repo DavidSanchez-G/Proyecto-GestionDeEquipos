@@ -1,0 +1,124 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    min-height: 100vh;
+}
+
+.left-section {
+    flex: 1;
+    background-image: linear-gradient(115deg, transparent 75%, #343a40 75%), url('../img/edificio.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+
+    justify-content: flex-start; 
+    padding-top: 20px; 
+    position: relative; 
+    color: white;
+    text-align: center;
+}
+
+.logo-container {
+    position: absolute;
+    display: flex;
+    top: 20px;
+    left: 10px;
+    width: auto;
+    margin: 0;
+}
+
+.logo {
+    display: block;
+    max-width: 250px;
+    height: auto;
+}
+
+.left-section h1 {
+    font-size: 2.5em;
+    margin: 0;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.left-section p {
+    font-size: 1.2em;
+    margin: 0;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+}
+
+.login-container {
+    width: 500px;
+    background-color: #343a40;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+}
+
+.login-form h2 {
+    text-align: center;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+input:focus {
+    outline: none;
+    border-color: #7e4f08;
+}
+
+.btn {
+    width: 100%;
+    padding: 10px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 15px;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+button[type="submit"].btn {
+    background-color: #f3970d;
+}
+
+.btn:hover {
+    background-color: #7e4f08;
+}
+
+
+.links {
+    text-align: center;
+}
+
+.links a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+.links a:hover {
+    text-decoration: underline;
+}
